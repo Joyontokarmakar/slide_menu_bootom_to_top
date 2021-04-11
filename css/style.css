@@ -1,0 +1,357 @@
+/* ===================== Mobile design start ======================= */
+.SlideDownMenu {
+    border-top: 8px solid #8657DB;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .SlideDownMenu nav {
+    background-color: #8657DB;
+    display: none;
+    height: 100px;
+    bottom: 0;
+  }
+
+  /*Menu Tap*/
+.MenuTab {
+    float: right;
+    margin: 0 40px 0 0;
+    width: 40px;
+  }
+  /*Nav Tap*/
+  .NavTab {
+      background-color: #8657db;
+      border-radius: 0 0 5px 5px;
+      height: 40px;
+      text-align: center;
+      width: 60px;
+  }
+  /*Border*/
+  .NavTab a {
+    position: relative;
+    padding-left: 25px;
+  }
+   
+  .NavTab a:before {
+    content: "";
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    width: 25px;
+    height: 0.125em;
+    border-top: 0.5em double #333;
+    border-bottom: 0.2em solid #333;
+  }
+
+  .SlideDownMenu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 22px 0;
+    text-align: center;
+}
+.SlideDownMenu ul li {
+  display: inline-block;
+}
+.SlideDownMenu ul li a {
+  position:relative;
+  z-index: 1;
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+.SlideDownMenu ul li a:hover {
+  color: #fff;
+}
+.SlideDownMenu ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #8e44ad;
+  border-radius:5px;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+  transition: all .5s;
+}
+.SlideDownMenu ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: #eee;
+    border-radius: 100%;
+  }
+  100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}@font-face {
+    font-family: Helvetica Neue;
+    src: url(../fonts/HelveticaNeue.ttf);
+}
+
+/* body{
+    height: 100vh;
+} */
+
+.bg_color {
+    background-color: #F7F7F7;
+}
+
+.navbar {
+    background-color: #fff;
+}
+
+.logo img {
+    width: 50%;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.input_field {
+    border: 1px solid #ddd !important;
+    background-color: #F7F7F7 !important;
+    font-size: 14px !important;
+    font-family: Helvetica Neue;
+}
+
+.input_field::placeholder {
+    font-size: 14px !important;
+    font-family: Helvetica Neue;
+    color: #868E96;
+}
+
+.input_field:focus {
+    border: 1px solid #FF6347;
+    background-color: #fff !important;
+}
+
+.user_info {
+    text-decoration: none;
+}
+
+.user_info span,
+.user_info:hover span {
+    text-decoration: none;
+    color: #212529;
+}
+
+
+
+/* ======================== Dashboard page design =========================== */
+
+.no-gutter {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Bus Company Tab Start */
+.bus_detail_table{
+    width: 100%;
+}
+
+.bus_detail_table table tbody tr:nth-child(odd){
+    background-color: #F9F9F9;
+}
+
+.bus_detail_table table tbody tr:nth-child(even){
+    background-color: #FFFFFF;
+}
+
+.bus_detail_table table thead{
+    background-color: #fff;
+    border-bottom: none;
+}
+
+.bus_detail_table table thead tr,
+.bus_detail_table table tbody tr{
+    vertical-align: middle;
+}
+
+.bus_detail_table table thead tr td,
+.bus_detail_table table tbody tr td{
+    width: 33%;
+}
+
+/* ===================== Mobile design start ======================= */
+.SlideDownMenu {
+    border-top: 8px solid #8657DB;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .SlideDownMenu nav {
+    background-color: #8657DB;
+    display: none;
+    height: 100px;
+    bottom: 0;
+  }
+
+  /*Menu Tap*/
+.MenuTab {
+    float: right;
+    margin: 0 40px 0 0;
+    width: 40px;
+  }
+  /*Nav Tap*/
+  .NavTab {
+      background-color: #8657db;
+      border-radius: 0 0 5px 5px;
+      height: 40px;
+      text-align: center;
+      width: 60px;
+  }
+  /*Border*/
+  .NavTab a {
+    position: relative;
+    padding-left: 25px;
+  }
+   
+  .NavTab a:before {
+    content: "";
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    width: 25px;
+    height: 0.125em;
+    border-top: 0.5em double #333;
+    border-bottom: 0.2em solid #333;
+  }
+
+  .SlideDownMenu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 22px 0;
+    text-align: center;
+}
+.SlideDownMenu ul li {
+  display: inline-block;
+}
+.SlideDownMenu ul li a {
+  position:relative;
+  z-index: 1;
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+.SlideDownMenu ul li a:hover {
+  color: #fff;
+}
+.SlideDownMenu ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #8e44ad;
+  border-radius:5px;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+  transition: all .5s;
+}
+.SlideDownMenu ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: #eee;
+    border-radius: 100%;
+  }
+  100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}
